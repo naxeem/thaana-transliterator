@@ -32,7 +32,7 @@
 <body>
 <div class="wrap">
 <h1>Dhivehi to Latin Converter</h1>
-<form action="/" method="POST">
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
     <textarea name="a" rows="10"><?php if(isset($_POST['a'])) { echo $_POST['a']; } ?></textarea>
     <br>
     <input type="submit" name="submit" value="Convert">
