@@ -55,9 +55,22 @@ class Thaana_Transliterator {
         "؟"		=> "?",		")"		=> ")",		"("		=> "("
 	);
 
+	private static $word_list = array(
+		"މުހައްމަދު" => "Mohamed",
+		"އަހްމަދު" => "Ahmed",
+		"އެއާޕޯޓް" => "airport",
+		"އިންސްޓިޓިއުޓް" => "institute",
+	);
+
 	public static function transliterate($input) {
 		// replace zero width non joiners
 		$input = preg_replace("/\xE2\x80\x8C/u", '', $input);
+
+		// fix words that normally dont transliterate well
+		// like names and english words.
+		foreach(self::$word_list as $k=>$v) {
+			$input = preg_replace("/\\".$k."/u", $v, $input);
+		}
 
 		// fili_fix first before replacing akuru and fili
 		foreach(self::$fili_fix as $k=>$v) {
