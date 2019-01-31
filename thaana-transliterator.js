@@ -10,14 +10,36 @@ const thaanaTransliterator = input => {
     // english words to properly replace
     // should add more words here
     let listThree = {
+        "ދުނިޔެއަށް ސަލާމް!": "Hello World!", // just for fun --- should remove this line
 		"މުހައްމަދ": "Mohamed",
 		"އަހްމަދ": "Ahmed",
 		"އެއާޕޯޓ": "airport",
-		"އިންސްޓިޓިއުޓ": "institute",
+        "އިންސްޓިޓިއުޓ": "institute",
+        "އެތުލެޓިކްސ": "athletics",
+        "އެތްލެޓިކްސ": "athletics",
+        "ޖޫނިއާ": "junior",
+        "އެސޯސިއޭޝަނ": "association",
+        "މޯލްޑިވްސ": "Maldives",
+        "މޯލްޑިވުސ": "Maldives",
+        "ޖެނުވަރީ": "january",
+        "ފެބުރުވަރީ": "february",
+        "މާޗް": "march",
+        "މާރިޗ": "march",
+        "އެޕްރީލ": "april",
+        // "": "may",
+        "ޖޫން": "june",
+        "ޖުލައި": "july",
+        "އޮގަސްޓ": "august",
+        "ސެޕްޓެމްބަރ": "september",
+        "އޮކްޓޯބަރ": "october",
+        "ނޮވެމްބަރ": "november",
+        "ޑިސެމްބަރ": "december",
+        "ކަލަންޑަރ": "calendar",
+        "ޗެމްޕިއަންޝިޕ": "championship"
 	};
     // escape for regexp
     const escapeRegExp = string => {
-        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     }
     // replace thaana with english
     const replaceLetters = (input, replacables) => {
@@ -35,8 +57,6 @@ const thaanaTransliterator = input => {
     input = replaceLetters(input, listOne);
     input = replaceLetters(input, listTwo);
     // capitalize first letter of sentence
-    input = input.replace(/(^\s*\w|[\.\!\?]\s*\w)/g, function(c) {
-        return c.toUpperCase();
-    });
+    input = input.replace(/(^\s*\w|[\.\!\?]\s*\w)/g, function(c) { return c.toUpperCase(); });
     return input;
 };
