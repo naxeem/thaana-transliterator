@@ -3,10 +3,15 @@ Thaana Transliterator PHP
 
 Converts thaana text to Latin transliterations.
 
-## Usage
+## Usage PHP
 
 ```php
 $text = Thaana_Transliterator::transliterate("ސަލާމް");
+```
+## Usage JavaScript
+
+```js
+let text = thaanaTransliterator("ދުނިޔެއަށް ސަލާމް!");
 ```
 
 #### Input
