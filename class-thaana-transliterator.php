@@ -10,7 +10,7 @@
 
 	Usage: echo Thaana_Transliterator::transliterate("ސަލާމް");
 */
-
+echo Thaana_Transliterator::transliterate("ސަލާމް");
 class Thaana_Transliterator {
 
 	private static $all_akuru_fili = array(
@@ -88,7 +88,8 @@ class Thaana_Transliterator {
 		}
 
 		// capitalize every letter AFTER a full-stop (period).
-		$input = preg_replace_callback('/[.!?].*?\w/', create_function('$matches', 'return strtoupper($matches[0]);'), ucfirst(strtolower($input)));
+		// Thanks @inerds
+		$input = preg_replace_callback('/[.!?].*?\w/', function($matches)  { return  strtoupper($matches[0]); } , ucfirst(strtolower($input)));
  
 		return ucfirst($input);
 	}
