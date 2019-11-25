@@ -7,7 +7,7 @@ This package uses [thaana-transliterator](https://github.com/naxeem/thaana-trans
 ## Installation
 
 ```bash/shell
-composer require jinas/thaana-transliterator
+
 ```
 
 ## Usage PHP
