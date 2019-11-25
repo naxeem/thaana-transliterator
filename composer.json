@@ -1,0 +1,19 @@
+{
+    "name": "jinas/thaana-transliterator",
+    "description": "Composer port for thaana transliterator by @naxeem",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Jinas",
+            "email": "j@live.mv"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Thaana\\": "src/"
+        }
+    }
+}
