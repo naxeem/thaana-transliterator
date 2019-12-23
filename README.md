@@ -25,4 +25,9 @@ echo Thaana::transliterate("ސަލާމް"); // Salaam
 
 Hurihaa insaanun ves ufanvanee, dharajaaai hahquthakugai minivankamaai hamahamakan libigenvaa baehge gothugaeve. Emeehunnah heyovisnumaai, heyo buhdheege baaru libigenveeve. Adhi emeehun ekaku anekakaa medhu muaamalaai kuranvanee, ukhuhvaitheri kamuge roohehgaeve.
 
+
+## Contributing
+
+Anyone is welcome to improve this.
+
 Many thanks to @jinas123 for porting taana transliterator to composer.
