@@ -5,16 +5,19 @@ Thaana text to Latin transliterator
 ## Installation
 
 ```bash/shell
-composer require naxeem/thaana-transliterator:1.0.0
+composer require naxeem/thaana-transliterator
 ```
 
 ## Usage PHP
 
 ```php
 
+require_once '../vendor/autoload.php';
+
 use Thaana\Thaana;
 
 echo Thaana::transliterate("ސަލާމް"); // Salaam
+
 ```
 
 #### Input
@@ -30,4 +33,4 @@ Hurihaa insaanun ves ufanvanee, dharajaaai hahquthakugai minivankamaai hamahamak
 
 Anyone is welcome to improve this.
 
-Many thanks to @jinas123 for porting taana transliterator to composer.
+Many thanks to [@jinas123](https://github.com/jinas123) for porting taana transliterator to composer.
