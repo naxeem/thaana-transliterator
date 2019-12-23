@@ -1,11 +1,14 @@
 {
-    "name": "",
-    "description": "Composer port for thaana transliterator by @naxeem",
+    "name": "naxeem/thaana-transliterator",
+    "description": "Thaana transliterator",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
-            "name": "Mohamed Jinas",
-            "email": "j@live.mv"
+            "name": "Ahmed Naxeem",
+            "email": "n@naxeem.com",
+            "homepage": "https://www.naxeem.com",
+            "role": "Developer"
         }
     ],
     "require": {

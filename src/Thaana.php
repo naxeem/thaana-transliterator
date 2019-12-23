@@ -5,7 +5,7 @@ namespace Thaana;
 use Thaana\Interfaces\IThaana;
 use Thaana\Utils\Util;
 /*
-	A composer port of Thaana_Transliterator by naxeem (http://naxeem.com)
+	Thaana_Transliterator by naxeem (http://www.naxeem.com)
 	A Thaana PHP Transliterator
 */
 
