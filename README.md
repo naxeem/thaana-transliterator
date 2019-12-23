@@ -5,7 +5,7 @@ Thaana text to Latin transliterator
 ## Installation
 
 ```bash/shell
-
+composer require naxeem/thaana-transliterator:1.0.0
 ```
 
 ## Usage PHP

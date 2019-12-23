@@ -15,6 +15,6 @@ class Util implements IUtil
      */
     public static function load($filename)
     {
-        return include('../configs/' . $filename . '.php');
+        return include(__DIR__ . '/../../configs/' . $filename . '.php');
     }
 }
