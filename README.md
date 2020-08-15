@@ -46,7 +46,7 @@ Download/copy and add the **thaana-transliterator.js** file.
 let text = thaanaTransliterator("ދުނިޔެއަށް ސަލާމް!"); // Hello World!
 ```
 
-You can find an NPM package for this script here [https://github.com/mapmeld/thaana-transliterator](github.com/mapmeld/thaana-transliterator) by @mapmeld
+You can find an NPM package for this script here [github.com/mapmeld/thaana-transliterator](https://github.com/mapmeld/thaana-transliterator) by [@mapmeld](https://github.com/mapmeld)
 
 ## Use Online / Demo
 
