@@ -10,7 +10,7 @@ You can use the copmoser package, or the simple PHP class or Javascript fuction.
 composer require naxeem/thaana-transliterator
 ```
 
-## Usage PHP class
+## Usage
 
 ```php
 
@@ -21,14 +21,6 @@ use Thaana\Thaana;
 echo Thaana::transliterate("ސަލާމް"); // Salaam
 
 ```
-
-#### Input
-
-ހުރިހާ އިންސާނުން ވެސް އުފަންވަނީ، ދަރަޖައާއި ޙައްޤުތަކުގައި މިނިވަންކަމާއި ހަމަހަމަކަން ލިބިގެންވާ ބައެއްގެ ގޮތުގައެވެ. އެމީހުންނަށް ހެޔޮވިސްނުމާއި، ހެޔޮ ބުއްދީގެ ބާރު ލިބިގެންވެއެވެ. އަދި އެމީހުން އެކަކު އަނެކަކާ މެދު މުޢާމަލާތް ކުރަންވަނީ، އުޚުއްވަތްތެރި ކަމުގެ ރޫޙެއްގައެވެ.
-
-#### Output
-
-Hurihaa insaanun ves ufanvanee, dharajaaai hahquthakugai minivankamaai hamahamakan libigenvaa baehge gothugaeve. Emeehunnah heyovisnumaai, heyo buhdheege baaru libigenveeve. Adhi emeehun ekaku anekakaa medhu muaamalaai kuranvanee, ukhuhvaitheri kamuge roohehgaeve.
 
 # Using this simple versions, instead of composer package
 
@@ -56,7 +48,16 @@ let text = thaanaTransliterator("ދުނިޔެއަށް ސަލާމް!"); // Hello 
 
 ## Use Online / Demo
 
-[https://www.naxeem.com/lab/thaana-transliterator/](Online Thaana Transliterator)
+[Online Thaana Transliterator](https://www.naxeem.com/lab/thaana-transliterator/)
+
+
+#### Input
+
+ހުރިހާ އިންސާނުން ވެސް އުފަންވަނީ، ދަރަޖައާއި ޙައްޤުތަކުގައި މިނިވަންކަމާއި ހަމަހަމަކަން ލިބިގެންވާ ބައެއްގެ ގޮތުގައެވެ. އެމީހުންނަށް ހެޔޮވިސްނުމާއި، ހެޔޮ ބުއްދީގެ ބާރު ލިބިގެންވެއެވެ. އަދި އެމީހުން އެކަކު އަނެކަކާ މެދު މުޢާމަލާތް ކުރަންވަނީ، އުޚުއްވަތްތެރި ކަމުގެ ރޫޙެއްގައެވެ.
+
+#### Output
+
+Hurihaa insaanun ves ufanvanee, dharajaaai hahquthakugai minivankamaai hamahamakan libigenvaa baehge gothugaeve. Emeehunnah heyovisnumaai, heyo buhdheege baaru libigenveeve. Adhi emeehun ekaku anekakaa medhu muaamalaai kuranvanee, ukhuhvaitheri kamuge roohehgaeve.
 
 ## Contributing
 
