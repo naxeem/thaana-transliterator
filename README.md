@@ -1,14 +1,16 @@
 # Thaana Transliterator
 
-Thaana text to Latin transliterator
+Thaana text to Latin transliterator.
 
-## Installation
+You can use the copmoser package, or the simple PHP class or Javascript fuction.
+
+## Installation Composer
 
 ```bash/shell
 composer require naxeem/thaana-transliterator
 ```
 
-## Usage PHP
+## Usage PHP class
 
 ```php
 
@@ -28,6 +30,33 @@ echo Thaana::transliterate("ސަލާމް"); // Salaam
 
 Hurihaa insaanun ves ufanvanee, dharajaaai hahquthakugai minivankamaai hamahamakan libigenvaa baehge gothugaeve. Emeehunnah heyovisnumaai, heyo buhdheege baaru libigenveeve. Adhi emeehun ekaku anekakaa medhu muaamalaai kuranvanee, ukhuhvaitheri kamuge roohehgaeve.
 
+# Using this simple versions, instead of composer package
+
+## Usage PHP
+
+Download/copy and include the **class-thaana-transliterator.php** file.
+
+```php
+include "./class-thaana-transliterator.php";
+
+$text = Thaana_Transliterator::transliterate("ސަލާމް"); // Salaam
+```
+
+## Usage JavaScript
+
+Download/copy and add the **thaana-transliterator.js** file.
+
+```html
+<script type="text/javascript" src="./thaana-transliterator.js"></script>
+```
+
+```js
+let text = thaanaTransliterator("ދުނިޔެއަށް ސަލާމް!"); // Hello World!
+```
+
+## Use Online / Demo
+
+[https://www.naxeem.com/lab/thaana-transliterator/](Online Thaana Transliterator)
 
 ## Contributing
 
