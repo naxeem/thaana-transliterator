@@ -4,13 +4,13 @@ Thaana text to Latin transliterator.
 
 You can use the copmoser package, or the simple PHP class or Javascript fuction.
 
-## Installation Composer
+## Composer
 
 ```bash/shell
 composer require naxeem/thaana-transliterator
 ```
 
-## Usage
+### Usage
 
 ```php
 
@@ -22,9 +22,9 @@ echo Thaana::transliterate("ސަލާމް"); // Salaam
 
 ```
 
-# Using this simple versions, instead of composer package
+## Using this simple versions, instead of composer package
 
-## Usage PHP
+### Usage PHP
 
 Download/copy and include the **class-thaana-transliterator.php** file.
 
@@ -34,7 +34,7 @@ include "./class-thaana-transliterator.php";
 $text = Thaana_Transliterator::transliterate("ސަލާމް"); // Salaam
 ```
 
-## Usage JavaScript
+### Usage JavaScript
 
 Download/copy and add the **thaana-transliterator.js** file.
 
@@ -50,12 +50,13 @@ let text = thaanaTransliterator("ދުނިޔެއަށް ސަލާމް!"); // Hello 
 
 [Online Thaana Transliterator](https://www.naxeem.com/lab/thaana-transliterator/)
 
+## Input/Output
 
-#### Input
+### Input
 
 ހުރިހާ އިންސާނުން ވެސް އުފަންވަނީ، ދަރަޖައާއި ޙައްޤުތަކުގައި މިނިވަންކަމާއި ހަމަހަމަކަން ލިބިގެންވާ ބައެއްގެ ގޮތުގައެވެ. އެމީހުންނަށް ހެޔޮވިސްނުމާއި، ހެޔޮ ބުއްދީގެ ބާރު ލިބިގެންވެއެވެ. އަދި އެމީހުން އެކަކު އަނެކަކާ މެދު މުޢާމަލާތް ކުރަންވަނީ، އުޚުއްވަތްތެރި ކަމުގެ ރޫޙެއްގައެވެ.
 
-#### Output
+### Output
 
 Hurihaa insaanun ves ufanvanee, dharajaaai hahquthakugai minivankamaai hamahamakan libigenvaa baehge gothugaeve. Emeehunnah heyovisnumaai, heyo buhdheege baaru libigenveeve. Adhi emeehun ekaku anekakaa medhu muaamalaai kuranvanee, ukhuhvaitheri kamuge roohehgaeve.
 
