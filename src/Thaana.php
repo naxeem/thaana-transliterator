@@ -27,7 +27,7 @@ class Thaana extends Util implements IThaana
 	 *
 	 * @param  mixed $input
 	 *
-	 * @return void
+	 * @return string
 	 */
 	public static function transliterate($input)
 	{
