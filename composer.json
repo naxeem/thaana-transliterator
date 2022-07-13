@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "naxeem\\Transliterator\\": "src/"
+            "naxeem\\ThaanaTransliterator\\": "src/"
         }
     }
 }
