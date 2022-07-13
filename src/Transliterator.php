@@ -10,7 +10,7 @@ class Transliterator implements TransliteratorInterface
 
 	use Helpers;
 
-	protected array $word_lists;
+	protected array $dictionary;
 
 	protected array $all_akuru_fili;
 
@@ -23,10 +23,10 @@ class Transliterator implements TransliteratorInterface
 	public function __construct()
 	{
 
-		$this->word_lists = $this->loadFile('wordlist');
-		$this->all_akuru_fili = $this->loadFile('all_akuru_fili');
-		$this->fili_fix = $this->loadFile('fili_fix');
-		$this->punctuations = $this->loadFile('punctuations');
+		$this->dictionary = $this->loadDictionary();
+		$this->all_akuru_fili = $this->loadConfig('all_akuru_fili');
+		$this->fili_fix = $this->loadConfig('fili_fix');
+		$this->punctuations = $this->loadConfig('punctuations');
 	}
 
 	/**
@@ -45,7 +45,7 @@ class Transliterator implements TransliteratorInterface
 
 		// fix words that normally dont translate well
 		// like names and english words.
-		$this->replaceFromText($this->word_lists);
+		$this->replaceFromText($this->dictionary);
 
 		// fili_fix first before replacing akuru and fili
 		$this->replaceFromText($this->fili_fix);
@@ -57,7 +57,6 @@ class Transliterator implements TransliteratorInterface
 		$this->replaceFromText($this->punctuations);
 
 		// capitalize every letter AFTER a full-stop (period).
-		// Thanks @inerds
 		$this->capitalizeFirstLetterOfNewSentence();
 
 		return ucfirst($this->text);
