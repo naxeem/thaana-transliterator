@@ -4,7 +4,7 @@ Thaana text to Latin transliterator.
 
 You can use the copmoser package, or the simple PHP class or Javascript fuction.
 
-## Composer
+## Install
 
 ```bash/shell
 composer require naxeem/thaana-transliterator
@@ -14,39 +14,23 @@ composer require naxeem/thaana-transliterator
 
 ```php
 
-require_once '../vendor/autoload.php';
+use naxeem\ThaanaTransliterator\Transliterator;
 
-use Thaana\Thaana;
+$transliterator =  new Transliterator;
 
-echo Thaana::transliterate("ސަލާމް"); // Salaam
+echo $transliterator->transliterate("ސަލާމް");
 
 ```
+### Other versions
 
-## Using this simple versions, instead of composer package
+#### NPM
+[github.com/mapmeld/thaana-transliterator](https://github.com/mapmeld/thaana-transliterator) by [@mapmeld](https://github.com/mapmeld)
 
-### Usage PHP
+#### Javascript
+[github.com/naxeem/thaana-transliterator-js](https://github.com/naxeem/thaana-transliterator-js)
 
-Download/copy and include the **class-thaana-transliterator.php** file.
-
-```php
-include "./class-thaana-transliterator.php";
-
-$text = Thaana_Transliterator::transliterate("ސަލާމް"); // Salaam
-```
-
-### Usage JavaScript
-
-Download/copy and add the **thaana-transliterator.js** file.
-
-```html
-<script type="text/javascript" src="./thaana-transliterator.js"></script>
-```
-
-```js
-let text = thaanaTransliterator("ދުނިޔެއަށް ސަލާމް!"); // Hello World!
-```
-
-You can find an NPM package for this script here [github.com/mapmeld/thaana-transliterator](https://github.com/mapmeld/thaana-transliterator) by [@mapmeld](https://github.com/mapmeld)
+#### PHP Class
+[github.com/naxeem/thaana-transliterator-php-class](https://github.com/naxeem/thaana-transliterator-php-class)
 
 ## Use Online / Demo
 
